@@ -1,0 +1,51 @@
+
+Azure files overview:
+
+Shared storage
+server message block(SMB) protocol
+network file system (NFS) protocol
+access using rest api interface
+
+Azure file shares:
+
+Shared application running on azure virtual machines, windows, linux and other cloud services
+SMB and NFS files shares are accessible
+
+
+File storage use cases:
+
+Replace and Supplement: Replace and Supplement traditional on-prem file servers to NAS devices
+Access anywhere: directly mount files shares whereever you are in the world
+Lift and shift Applications: Lift and shift applications to the cloud
+Azure file sync: azure files shares can also be replicated with azure file sync
+shared applications
+diagnostic data
+tools and utilities
+
+Azure files Vs Azure Blobs:
+
+Azure files: can be accessed from SMB,NFS, Rest interface from anywhere 
+Azure blobs: can be accessed from libraries and rest interface that allows unstructed data to be stored and accessed at a massive scale
+
+other differences for azure files and azure blobs:
+azure files:
+1. directory objects
+2. accessed through file shares
+3. shared access accross multiple VM's
+
+azure blobs:
+1. flat namespace
+2. access though container
+3. azure disk single VM
+
+Managing file shares by os:
+windows:
+  makesure port 445 is open
+linux:
+  mount the drive(SMB/NFS)
+macOS:
+  mount the drive(SMB)
+  
+
+
+
