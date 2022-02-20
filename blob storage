@@ -6,4 +6,20 @@ Blob Access tiers:
 3. archive
 
 
+uploading blobs:
+1. block blobs -- binary data and files
+2. page blobs -- frequent reads and writes
+3. append blobs -- append oprations useful for logging scenarios
 
+authentication type:
+1. storage account key
+2. azure active directory user account
+3. blob data owner
+4. blob data contributor
+
+blob upload tools:
+Azcopy: command line tool from linux and windows
+adf: to copy to and from blob storage using the account key and other access
+blobfuse: vistual file system storage
+azure data box disk: service to transfer onpremises data to blob storage
+azure import/export: azure storage explorer
